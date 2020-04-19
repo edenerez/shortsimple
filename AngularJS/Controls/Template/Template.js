@@ -23,7 +23,7 @@ App.directive('member', function ($compile) {
         scope: {
             member: '='
         },
-        template: "<div class=\"col-md-{{member.value}}\">{{member.value}}</div>",
+        template: "<div style=\"min-height:30px;\" class=\"col-md-{{member.value}}\">{{member.value}}</div>",
         controller: ['$scope', function ($scope) {
 
             $scope.buttonName = "buttonName1";
